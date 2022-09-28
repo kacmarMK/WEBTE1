@@ -1,0 +1,133 @@
+html { 
+    font-family: Verdana, Arial, Times, Georgia;
+    font-size: 15px;
+}
+
+body {
+    background: url(pictures/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+p {
+    padding: 5px;
+    color: gold;
+}
+
+
+
+
+
+input[type=text],
+input[type=date],
+input[type=number],
+input[type=email] {
+    background-color: orange;
+    color: black;
+    border: black;
+    border: 1px solid;
+}
+
+select, option {
+    color: black;
+    background-color: orange;
+}
+
+input[type=submit] {
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px 33px;
+    text-decoration: none;
+    margin: 5px 4px;
+    cursor: pointer;  
+    border-radius: 5%;
+}
+
+.nametag {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.questions {
+    padding: 0;
+}
+
+.input-group-text {
+    color: black;
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.container-md {
+    margin-top: 5%;
+    padding: 3px;
+    border-radius: 0 0 10% 10%;
+    opacity: 0.8;
+}
+
+
+.input-group {
+    margin: 8px;
+}
+
+.form-check {
+    margin: 8px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    line-height: 12px;
+    margin: 12px;
+}
+
+#intro {
+    background-color: black;
+}
+
+#title {
+    font-size: 26px;
+    text-align: center;
+    color: gold;
+}
+
+#col1 {
+    background-color: gold;
+    color: black;
+    opacity: 0.9;
+    border-radius: 5%;
+}
+
+#col2 {
+    background-color: black;
+    color: gold;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+#q0, #q1, #q2, #q3, #q4, #q5, #q6, #q7 {
+    display: none;
+}
+
+#religionType, #church, #branch, #saria, #separation, #discrimination, #beliefPeriod {
+    display: none;
+}
+#atheistReason, #otherGender {
+    display: none;
+}

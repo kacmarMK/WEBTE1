@@ -1,0 +1,65 @@
+html { 
+    font-family: Verdana, Arial, Times, Georgia;
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    background: url(pictures/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 2em 0;
+  padding: 0;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: navy;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+button:hover {background-color: blue}
+
+button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container-md {
+    margin-top: 2%;
+    text-align: center;
+}
+.content {
+    background-color: white;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 5px solid black;
+    width: 50%;
+    color: black;
+}
+
+.col {
+    margin: 5px;
+}
+
+.left {
+    float: left;
+}

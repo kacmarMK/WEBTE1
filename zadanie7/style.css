@@ -1,0 +1,222 @@
+html { 
+    font-family: Verdana, Arial, Times, Georgia;
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    background: url(pics/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+div.drag {
+  margin-top: 5%;
+
+}
+
+div.drag img{
+    margin: 5px;
+    transition:width 0.3s, height 0.3s;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+div.drag .placeholder:before {
+  position: absolute;
+}
+
+div.drag .placeholder{
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #CCC;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: 2px dashed #000;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#titleTAG {
+  padding: 8px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+#string {
+  background-image: url('pics/icons/search.png'); /* Add a search icon to input */
+  background-position: 7px 9px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 40%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-top: 32px; /* Add some space below the input */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent ;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  padding: 5px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+  font-size: large;
+  font-weight: bold;
+  margin: 10px;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.img-thumbnail {
+  transition: 0.3s;
+}
+.img-thumbnail:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#wrapper {
+  background-color: black;
+}
+
+.playpause label { 
+  display: block; 
+  box-sizing: border-box; 
+  width: 0; 
+  height: 74px; 
+  border-color: transparent transparent transparent white; 
+  transition: 100ms all ease; 
+  cursor: pointer; 
+  border-style: double; 
+  border-width: 0px 0 0px 60px;
+} 
+
+.playpause input[type="checkbox"] { 
+    visibility: hidden; 
+  } 
+
+.playpause input[type="checkbox"]:checked + label { 
+  border-style: solid; 
+  border-width: 37px 0 37px 60px; 
+} 
+
+.playpause{
+    border:8px solid gray;
+    border-radius:50%;
+    height:110px;
+    width:110px;
+    text-align:center;
+    position:relative;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    position:absolute;
+    left:18px;
+    top:10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+        <title>Zadanie 6</title>
+    </head>
+    <body>
+
+
+    <div class="container-md" id="main">
+      <div class="content">
+        <div class="col">
+          <h1>Graf</h1>
+        </div>
+        <hr/>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="sin" value="" id="sin" checked onchange="changeVisibility('sin')">
+          <label class="form-check-label" for="sin">
+            Sin
+          </label>
+          <input class="form-check-input" type="checkbox" name="cos" value="" id="cos" checked onchange="changeVisibility('cos')">
+          <label class="form-check-label" for="cos">
+            Cos
+          </label>
+        </div>
+
+        <div id="graph"></div>
+
+        <button class="btn btn-primary" id="finish" onclick="stopGraph()">Koniec</button>
+
+        <amplitude-setter id="component"></amplitude-setter>
+
+      </div>
+    </div>
+
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+    <script src="components/Amplitude.js"></script>
+    <script src="script.js"></script>
+    
+    </body>
+
+</html>

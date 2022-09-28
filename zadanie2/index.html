@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Zadanie 2</title>
+    </head>
+
+    <body>
+
+    <header>
+        <h1 class="maintextField" style="max-width: 90%;">Interaktívna mapa aktívnych prípadov koronavírusu na Slovensku</h1>
+    </header>
+
+    <section>  
+        <header>
+            <h2 class="maintextField">Prvých 10 najväčších miest Slovenska podľa počtu obyvateľov</h2>
+        </header>
+            <div style="position: relative; left: 120px;">
+            <img src="pictures/sk.png" id="slovakia" alt="Mapa Slovenska"> 
+                <div class="tooltip">
+                <span class="big dot" style="left: 90px; bottom: 115px;"></span><!-- Bratislava -->
+                <span class="tooltipText" style="left: 90px; bottom: 115px;">
+                    <span style="font-size: 19px; color: white;">Bratislava</span>
+                    <img src="pictures/ba.png" alt="erb mesta Bratislava" width="30" height="33">
+                    <span>Počet potvrdených prípadov: 2532</span>
+                    <span>Nových: 115</span>
+                    <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                </span>
+                </div>
+                <div class="tooltip">
+                    <span class="medium dot" style="left: 900px; top: 160px;"></span><!-- Presov -->
+                    <span class="tooltipText" style="left: 900px; top: 160px; margin-left: -250px; ">
+                        <span style="font-size: 19px; color: white;">Prešov</span>
+                        <img src="pictures/po.png" alt="erb mesta Prešov" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 651</span>
+                        <span>Nových: 80</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span>
+                </div>
+                <div class="tooltip">
+                    <span class="medium dot" style="left: 900px; top: 230px;"></span><!-- Kosice -->
+                    <span class="tooltipText" style="left: 900px; top: 230px; margin-left: -250px; ">
+                        <span style="font-size: 19px; color: white;">Košice</span>
+                        <img src="pictures/ke.png" alt="erb mesta Košice" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 649</span>
+                        <span>Nových: 61</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span>
+                </div>
+                <div class="tooltip">
+                    <span class="small dot" style="left: 425px; top: 90px;"></span><!-- Zilina -->
+                    <span class="tooltipText" style="left: 425px; top: 90px;">
+                        <span style="font-size: 19px; color: white;">Žilina</span>
+                        <img src="pictures/za.png" alt="erb mesta Žilina" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 416</span>
+                        <span>Nových: 32</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Zilina -->
+                </div>
+                <div class="tooltip">
+                    <span class="small dot" style="left: 500px; top: 248px;"></span><!-- Banska Bystrica -->
+                    <span class="tooltipText" style="left: 500px; top: 248px;">
+                        <span style="font-size: 19px; color: white;">Banská Bystrica</span>
+                        <img src="pictures/bb.png" alt="erb mesta Banská Bystrica" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 338</span>
+                        <span>Nových: 20</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Banska Bystrica -->
+                </div>
+                <div class="tooltip">
+                    <span class="medium dot" style="left: 280px; bottom: 160px;"></span><!-- Nitra -->
+                    <span class="tooltipText" style="left: 280px; bottom: 160px;">
+                        <span style="font-size: 19px; color: white;">Nitra</span>
+                        <img src="pictures/ni.png" alt="erb mesta Nitra" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 638</span>
+                        <span>Nových: 34</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Nitra -->
+                </div>
+                <div class="tooltip">
+                    <span class="medium dot" style="left: 200px; bottom: 186px;"></span><!-- Trnava -->
+                    <span class="tooltipText" style="left: 200px; bottom: 186px;">
+                        <span style="font-size: 19px; color: white;">Trnava</span>
+                        <img src="pictures/trn.png" alt="erb mesta Trnava" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 607</span>
+                        <span>Nových: 28</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Trnava -->
+                </div>
+                <div class="tooltip">
+                    <span class="small dot" style="left: 468px; top: 130px;"></span><!-- Martin -->
+                    <span class="tooltipText" style="left: 468px; top: 130px;">
+                        <span style="font-size: 19px; color: white;">Martin</span>
+                        <img src="pictures/mar.gif" alt="erb mesta Martin" width="32" height="36">
+                        <span>Počet potvrdených prípadov: 289</span>
+                        <span>Nových: 23</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Martin -->
+                </div>
+                <div class="tooltip">
+                    <span class="small dot" style="left: 290px; top: 195px;"></span><!-- Trencin -->
+                    <span class="tooltipText" style="left: 290px; top: 195px;">
+                        <span style="font-size: 19px; color: white;">Trenčín</span>
+                        <img src="pictures/tre.png" alt="erb mesta Trenčín" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 440</span>
+                        <span>Nových: 34</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Trencin -->
+                </div>
+                <div class="tooltip">
+                    <span class="small dot" style="left: 718px; top: 150px;"></span><!-- Poprad -->
+                    <span class="tooltipText" style="left: 718px; top: 150px;">
+                        <span style="font-size: 19px; color: white;">Poprad</span>
+                        <img src="pictures/pp.png" alt="erb mesta Poprad" width="30" height="33">
+                        <span>Počet potvrdených prípadov: 298</span>
+                        <span>Nových: 22</span>
+                        <span>Údaje naposledy aktualizované: 10.10.2020</span>
+                    </span><!-- Poprad -->
+                </div>
+            </div>
+            <div class="textField">
+                <span>
+                    <span style="font-size: 19px; color: white;">Zdroje:</span>
+                    <a href="https://www.freepik.com/free-vector/destroying-coronavirus-background_10345442.htm#page=1&query=virus&position=6">Pozadie</a>
+                    <a href="https://www.iconspng.com/uploads/outline-of-slovakia-with-white-fill/outline-of-slovakia-with-white-fill.png">Mapa Slovenska</a>
+                    <a href="https://sk.wikipedia.org/wiki/Zoznam_miest_na_Slovensku">Erby slovenských miest</a>
+                </span>
+            </div>
+            
+    </section>
+
+    <footer>
+        <p>
+            <span class="special_text_background">Copyright © 2020 Marek Kačmár - Všetky práva vyhradené</span>
+            <span class="special_text_background">Webové technológie 1 - Fakulta elektrotechniky a informatiky STU v Bratislave</span> 
+        </p>
+    </footer>
+    </body>
+</html> 

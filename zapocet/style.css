@@ -1,0 +1,43 @@
+html { 
+    font-family: Verdana, Arial, Times, Georgia;
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    background: url(pics/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel, .main{
+  background-color: white;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 30%;
+}
+
+.main {
+  width: 400px;
+  border-radius: 0%;
+}
+
+.slick-dots {
+  left: 0px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 20%;
+}
+
+.buttonSet{
+  text-align: center;
+  margin-top: 12px;
+}

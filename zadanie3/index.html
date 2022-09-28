@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>Zadanie 3</title>
+    </head>
+    <body>
+    <div class="container-md" id="intro">
+        <header id="title">Prieskum zisťujúci mieru religiozity občanov Slovenskej republiky</header>
+        <p>
+            Zdravím Vás. Toto je prieskum zameraný na zistenie miery religiozity obyvateľstva Slovenskej republiky. 
+            Týmto Vás prosím o pravdivé vyplnenie tohto krátkeho dotazníka. 
+        </p>
+        <p>
+          Ďakujem pekne za Váš čas. 
+        </p>
+    </div>
+    <form name="form" id="form" onsubmit="return validateForm()" method="post" action="http://iolab.sk/form2mail/form2mail.php" enctype="multipart/form-data">
+    <input type="hidden" name="apikey" value="f42c781aeb7f136faf7201b9234c79e0">
+    <input type="hidden" name="from" value="xkacmarm@stuba.sk">
+    <input type="hidden" name="to" value="feistu02@gmail.com">
+    <input type="hidden" name="subject" value="Marek Kačmár">
+    <input type="hidden" name="redirectOk" value="http://www.google.sk">
+    <input type="hidden" name="redirectFalse" value="http://147.175.121.202/~xkacmarm/formX235X/">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="col1">
+              <fieldset>
+                <legend>Osobné údaje</legend>
+                    <input type="hidden" name="Marek Kačmár">
+
+                    <div class="input-group">
+                      <div class="input-group-prepend hello">
+                        <label class="nametag"><span>Krstné meno<span style="color: red;">*</span></span></label>
+                      </div>
+                      <input type="text" aria-label="First name" class="form-control" name="name" id="name" onblur="validateName()">
+                    </div>
+                    <div class="error" id="nameErr"></div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="nametag"><span>Priezvisko<span style="color: red;">*</span></span></label>
+                      </div>
+                    <input type="text" aria-label="Last name" class="form-control" name="surname" id="surname" onblur="validateSurname()">
+                    </div>
+                    <div class="error" id="surnameErr"></div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="nametag"><span>Dátum narodenia<span style="color: red;">*</span></span></label>
+                      </div>
+                      <input class="form-control" type="date" id="date" max="2020-10-21" name="date" onblur="valiDate()">
+                    </div>
+                    <div class="error" id="dateErr"></div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="nametag"><span>Vek<span style="color: red;">*</span></span></label>
+                      </div>
+                      <input class="form-control" type="number" id="age" name="age" onblur="validateAge()">
+                    </div>
+                    <div class="error" id="ageErr"></div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="nametag"><span>E-mail<span style="color: red;">*</span></span></label>
+                      </div>
+                      <input class="form-control" type="email" id="email" name="email" onblur="validateEmail()">
+                    </div>
+                    <div class="error" id="emailErr"></div>
+
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="nametag"><span>Pohlavie</span></label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="gender" id="man" value="Man" onclick="selectThis('man');
+                          document.getElementById('otherGender').style.display = 'none'">
+                          Muž
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="gender" id="woman" value="Woman" onclick="selectThis('woman');
+                          document.getElementById('otherGender').style.display = 'none'">
+                          Žena
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="gender" id="other" value="Other" onclick="selectThis('other');
+                          document.getElementById('otherGender').style.display = 'block'">
+                          Iné, uveďte aké
+                        </label>
+                      </div>
+                      <textarea name="gender naming" id="otherGender" rows="1"></textarea>
+                    </div>
+                    <div class="input group error" id="genderErr"></div>
+              </fieldset>
+            </div>
+            <div class="col-md-6" id="col2">
+              <fieldset>
+                <legend>
+                Otázky ohľadom religiozity
+                </legend>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <label class="nametag"><span>Ste veriaci?<span style="color: red;">*</span></span></label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="religious?" id="religiosityYes" value="Yes" onchange="validateReligiosity('religiosityYes'); show(this)">
+                      Áno
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="religious?" id="religiosityNo" value="No" onchange="validateReligiosity('religiosityNo'); show(this)">
+                      Nie
+                    </label>
+                  </div>
+                </div>
+                <div class="input group error" id="religiosityErr"></div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q1">Aké náboženstvo vyznávate?</span></label>
+                  </div>
+                  <select class="form-control" name="religion name" id="religionType" onchange="show(this); select('religionType')" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Christianity">Kresťanstvo</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Other religion">Iné náboženstvo</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q2">Pod akú cirkev patríte?</span></label>
+                  </div>
+                  <select class="form-control" name="belongs to church" id="church" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Catholic">Katolícka</option>
+                    <option value="Evangelic">Evanjelická</option>
+                    <option value="Orthodox">Pravoslávna</option>
+                    <option value="Other">Iná cirkev alebo sekta</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q3">Pod akú islamskú vetvu patríte?</span></label>
+                  </div>
+                  <select class="form-control" name="part of branch" id="branch" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Sunna">Sunna</option>
+                    <option value="Si'a">Ší'a</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q4">Ste za presadenie Šaríe?</span></label>
+                  </div>
+                  <select class="form-control" name="wants saria" id="saria" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Yes to saria">Áno</option>
+                    <option value="No to saria">Nie</option>
+                    <option value="Doesn't know">Neviem</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q5">Ste za odluku cirkvi od štátu?</span></label>
+                  </div>
+                  <select class="form-control" name="separation" id="separation" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Wants separation from the state">Áno</option>
+                    <option value="Doesn't want separation from the state">Nie</option>
+                    <option value="Doesn't know(separation)">Neviem</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q6">Ste diskriminovaný na základe vašej viery?</span></label>
+                  </div>
+                  <select class="form-control" name="discrimination" id="discrimination" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Is discriminated">Áno</option>
+                    <option value="Is not discriminated">Nie</option>
+                    <option value="Doesn't know(discrimination)">Neviem</option>
+                  </select>
+                </div>
+                <div>
+                  <div class="input-group-prepend">
+                    <label class="nametag questions"><span id="q7">Od akého životného obdobia ste začali veriť?</span></label>
+                  </div>
+                  <select class="form-control" name="started believing in" id="beliefPeriod" onchange="show(this)" style="background-color: orange; border: yellow;">
+                    <option value="" selected>Výber...</option>
+                    <option value="Youth">Odmalička</option>
+                    <option value="Adolescence">V období dospievania</option>
+                    <option value="Adulthood">Počas dospelosti</option>
+                  </select>
+                </div>
+                <div class="input-group-prepend">
+                  <label class="nametag questions"><span id="q0">Prečo ste neveriaci?</span></label>
+                </div>
+                <textarea name="why not religious?" id="atheistReason" rows="2"></textarea>
+                <br>
+                <input type="submit" value="Odošli formulár">
+          </fieldset>
+        </div> 
+        </div>
+        </div>
+      </form>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>

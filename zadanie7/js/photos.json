@@ -1,0 +1,53 @@
+{
+  "photos":
+  [
+    {
+      "src": "pics/pet.jpg",
+      "title": "Petra",
+      "description": "Petra je skalné mesto a archeologická lokalita v Jordánsku. Od roku 1985 je zaradená na zoznam svetového kultúrneho a prírodného dedičstva UNESCO. Trosky mesta, ktoré boli odkryté v 19.storočí, sú prístupné návštevníkom.",
+      "value": 1
+    },
+    {
+      "src": "pics/can.jpg",
+      "title": "Grand Canyon",
+      "description": "Veľký kaňon je najznámejšia a najväčšia úžina (kaňon) tvorená riekou Colorado v severnej Arizone v Spojených štátoch. Leží v Coloradskej plošine. Patrí medzi najznámejšie prírodné prirodzenia na svete.",
+      "value": 2
+    },
+    {
+      "src": "pics/taj.jpg",
+      "title": "Taj Mahal",
+      "description": "Tádž Mahal je stavba pri Ágre v indickom štáte Uttarpradéš. Súčasť svetového dedičstva UNESCO.",
+      "value": 3
+    }, 
+    {
+      "src": "pics/eve.jpg",
+      "title": "Mount Everest",
+      "description": "Mount Everest(doslova Everestov vrch), je najvyšší vrch Zeme. Jeho výška je 8 848 m a leží v Himalájach. Pomenovaný je po zememeračovi Sirovi Georgovi Everestovi (1790 – 1866) a prvýkrát ho dokázateľne a zdokumentovane zdolali 29. mája 1953 Sir Edmund Hillary a šerpa Tenzing Norgay.",
+      "value": 4
+    },  
+    {
+      "src": "pics/wal.jpg",
+      "title": "Great Wall of China",
+      "description": "Čínsky múr alebo Veľký čínsky múr je starý systém opevnenia, ktorý sa ťahá naprieč severnou Čínou. Bol vybudovaný za dynastie Ming v období od konca 15. storočia do začiatku 17. storočia. Jeho účelom bolo chrániť Čínu pred mongolskými vpádmi.",
+      "value": 5
+    },   
+    {
+      "src": "pics/kiy.jpg",
+      "title": "Kiyomizu-dera",
+      "description": "Kiomizu-dera je niekoľko rôznych japonských buddhistických chrámov, ale najznámejší z nich je chrám Otowasan Kijomizudera vo východnom Kjóte. Je to jedna z najznámeších pamiatok v Kjóte.",
+      "value": 6
+    },   
+    {
+      "src": "pics/aur.jpg",
+      "title": "Aurora borealis",
+      "description": "Polárna žiara je svetelný úkaz na oblohe, ktorý vzniká pôsobením nabitých častíc slnečného vetra pri vstupe do zemskej atmosféry, alebo do atmosféry iného kozmického telesa.",
+      "value": 7
+    },   
+    {
+      "src": "pics/col.jpg",
+      "title": "Colosseum",
+      "description": "Koloseum sú ruiny veľkého amfiteátra v strede Ríma. V súčasnosti je to architektonická dominanta Ríma. Koloseum stojí na mieste umelého jazera v záhrade Neronovho Zlatého domu na konci Forum Romanum. Pôvodne slúžil ako amfiteáter a bola to najväčšia budova v Rímskej ríši.",
+      "value": 8
+    }   
+  ]
+}

@@ -1,0 +1,154 @@
+html { 
+    font-family: Verdana, Arial, Times, Georgia;
+    font-size: 15px;
+    height: 100%;
+}
+
+body {
+    background: url(pictures/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text] {
+    background-color: white;
+    color: black;
+    border: black;
+    border: 1px solid;
+    width: 80%;
+}
+
+label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.labels {
+    color: red;
+    background-color: white;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 60px;     
+    border: 2px solid black;
+    white-space: nowrap;
+}
+
+#calculate {
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 60%;
+    background-color: violet;
+    color: black;
+}
+#stops {
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 60%;
+    background-color: rgb(37, 121, 231);
+    color: black;
+}
+
+#map,
+#street {
+    float: left;
+    height: 50%;
+    width: 50%;
+    margin-top: 20px;
+  }
+  
+
+.container-md {
+    margin-top: 5%;
+    text-align: center;
+}
+.content {
+    background-color: rgb(48, 46, 139);
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30% 0% 25% 0%;
+    border: 5px solid black;
+    width: 50%;
+    color: white;
+}
+
+.col {
+    margin: 5px;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
+
+  
